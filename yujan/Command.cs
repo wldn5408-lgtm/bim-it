@@ -16,6 +16,7 @@ namespace yujan
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            // 깃허브에 올리기 연습
             TaskDialog.Show("Hello", "Hello, Revit!");
             return Result.Succeeded;
         }
