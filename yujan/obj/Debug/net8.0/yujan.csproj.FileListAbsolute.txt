@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\yujan\yujan\bin\Debug\net8.0\yujan.deps.json
+C:\Users\User\Desktop\yujan\yujan\bin\Debug\net8.0\yujan.dll
+C:\Users\User\Desktop\yujan\yujan\bin\Debug\net8.0\yujan.pdb
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.AssemblyInfo.cs
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.dll
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\refint\yujan.dll
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.pdb
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\ref\yujan.dll
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.csproj.Up2Date
+C:\Users\User\Desktop\yujan\yujan\obj\Debug\net8.0\yujan.sourcelink.json
