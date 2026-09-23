@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("yujin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12f0286a48cda2aa43f9b26790dc255016f3c26d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd01da6f50b5a4921599b85d2e886668eb4e8475")]
 [assembly: System.Reflection.AssemblyProductAttribute("yujin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("yujin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

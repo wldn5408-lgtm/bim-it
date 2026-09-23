@@ -9,6 +9,8 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.ApplicationServices;
+using Microsoft.VisualBasic;
+using Autodesk.Revit.DB.Structure;
 
 namespace yujin
 {
@@ -41,7 +43,7 @@ namespace yujin
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static FamilySymbol GetFamilySymbolByName(string name)
+        public static FamilySymbol GetFamilySymbolByName(string name, Document doc)
         {
             FilteredElementCollector collecter = new FilteredElementCollector(doc);
             collecter.OfCategory(BuiltInCategory.OST_StructuralFraming);
@@ -52,8 +54,42 @@ namespace yujin
             {
                 if(name == item.Name)
                 {
-                    fs = item
+                    fs = item;
                     break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// XYZ 좌표 리스트를 받아서 Curve 리스트로 반환하는 함수
+        /// </summary>
+        /// <param name="points"></param>
+        /// <returns></returns>
+        public static List<Curve> GetCurveListFromPts(List<XYZ> points)
+        {
+            List<Curve> curves = new List<Curve>();
+
+            for (int i = 0; i < points.Count - 1; i++)
+            {
+                Line line = Line.CreateBound(points[i], points[i + 1]);
+                Curve.Add(line);
+            }
+
+                return curves;
+        }
+
+
+        public static void CreateFamilyInstanceFromCurve(List<Curve> c, FamilySymbol fs, Level level, Document doc) // 보이드는 리턴받지 않겠다는 뜻.
+        {
+            foreach (Curve item in c)
+            {
+                using (Transaction trans = new Transaction(doc, "Create Beam"))
+                {
+                    trans.Start();
+                    fs.Activate();
+                    FamilyInstance fi = doc.Create.NewFamilyInstance
+                        (item, fs, level, StructuralType.Beam);
+                    trans.Commit();
                 }
             }
         }
