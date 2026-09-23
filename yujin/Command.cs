@@ -49,6 +49,16 @@ namespace yujin
             collecter.OfClass(typeof(FamilySymbol));
 
             FamilySymbol fs = collecter.FirstElement() as FamilySymbol;
+            if(tt == null)
+            {
+                Autodesk.Revit.UI.TaskDialog.Show("오류", "해당이름의 패밀리 심볼을 찾지 못했습니다.");
+                return Result.Failed;
+            }
+
+            FamilySymbol tt = Util.GetFamilySymbolByName("G1", doc);
+
+
+
             Level level = doc.ActiveView.GenLevel;
 
             foreach (Curve c in dd)
@@ -56,7 +66,7 @@ namespace yujin
                 using (Transaction trans = new Transaction(doc, "create beam"))
                 {
                     trans.Start();
-                    fs.Activate();
+                    tt.Activate();
                     FamilyInstance fi = doc.Create.NewFamilyInstance(c, fs, level, StructuralType.Beam);
                     trans.Commit();
                 }

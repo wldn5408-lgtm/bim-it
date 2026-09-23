@@ -11,3 +11,4 @@ C:\Users\User\Desktop\yujin\yujin\obj\Debug\net8.0-windows\refint\yujin.dll
 C:\Users\User\Desktop\yujin\yujin\obj\Debug\net8.0-windows\yujin.pdb
 C:\Users\User\Desktop\yujin\yujin\obj\Debug\net8.0-windows\ref\yujin.dll
 C:\Users\User\Desktop\yujin\yujin\obj\Debug\net8.0-windows\yujin.csproj.Up2Date
+C:\Users\User\Desktop\yujin\yujin\obj\Debug\net8.0-windows\yujin.sourcelink.json
